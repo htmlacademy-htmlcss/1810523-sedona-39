@@ -8,7 +8,7 @@
 
 <header class="header">
   <a class="logo" href="index.html">
-    <img src="#" alt="Логотип города Седона">
+    <img alt="Логотип города Седона" src="images/logo.svg">
   </a>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -20,11 +20,13 @@
   <div class="controls">
     <a href="#">
       <span class="visually-hidden">Поиск</span>
-      <img class="control-search" src="#" alt="Искать">
+      <img alt="Искать" class="control-search" src="images/search.svg">
+      <!-- декоративное изображение, потом сделать стилями !-->
     </a>
     <a href="#">
       <span class="visually-hidden">Избранное</span>
-      <img class="control-favorites" src="#" alt="В избранное">
+      <img alt="В избранное" class="control-favorites" src="images/favorites.svg">
+      <!-- декоративное изображение, потом сделать стилями !-->
     </a>
     <a href="#">
       <span class="control-want-here">Хочу сюда!</span>
@@ -33,10 +35,14 @@
 </header>
 
 <main class="hotels">
+  <img alt="" src="images/filter.jpg">
+  <!-- декоративное изображение, потом сделать стилями !-->
   <h1>Гостиницы Седоны</h1>
   <ol class="breadcrumbs">
     <li>
       <a class="breadcrumbs-home" href="index.html">
+        <img src="images/home.svg" style="background-color: tomato">
+        <!-- декоративное изображение, потом сделать стилями !-->
         <span>Главная страница</span>
       </a>
     </li>
@@ -96,18 +102,21 @@
     <ol class="hotel-display-mode">
       <li>
         <a href="#" class="display-mode-cards">
+          <img alt="" src="images/cards.svg">
           <span class="visually-hidden">Показать карточками</span>
           <!-- иконка через CSS, т.к. изображение декоративное !-->
         </a>
       </li>
       <li>
         <a href="#" class="display-mode-full-screen">
+          <img alt="" src="images/full-screen.svg">
           <span class="visually-hidden">Показать на весь экран</span>
           <!-- иконка через CSS, т.к. изображение декоративное !-->
         </a>
       </li>
       <li>
         <a href="#" class="display-mode-list">
+          <img alt="" src="images/list.svg">
           <span class="visually-hidden">Показать списком</span>
           <!-- иконка через CSS, т.к. изображение декоративное !-->
         </a>
@@ -116,50 +125,50 @@
     <ul class="hotel-card-list">
       <li class="hotel-card-item">
         <a href="">
-          <img alt="Звёздное небо и горы" src="#">
+          <img alt="Звёздное небо и горы" src="images/hotel-1.jpg">
         </a>
         <h3 class="hotel-card-title">Amara Resort & Spa</h3>
         <p class="hotel-card-type">Гостиница</p>
         <p class="hotel-card-price">От 4000 ₽</p>
         <a class="hotel-card-details" href="#">Подробнее</a>
         <button class="hotel-card-add" type="button">В избранное</button>
-        <img alt="четыре звезды" class="hotel-card-stars" src="#">
+        <img alt="четыре звезды" class="hotel-card-stars" src="images/stars-4.svg">
         <p class="hotel-card-rating">Рейтинг: 8.5</p>
       </li>
       <li class="hotel-card-item">
         <a href="">
-          <img alt="Замок на холме" src="#">
+          <img alt="Замок на холме" src="images/hotel-2.jpg">
         </a>
         <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
         <p class="hotel-card-type">Гостиница</p>
         <p class="hotel-card-price">От 5000 ₽</p>
         <a class="hotel-card-details" href="#">Подробнее</a>
         <button class="hotel-card-added" type="button">В избранном</button>
-        <img alt="четыре звезды" class="hotel-card-stars" src="#">
+        <img alt="четыре звезды" class="hotel-card-stars" src="images/stars-4.svg">
         <p class="hotel-card-rating">Рейтинг: 9.2</p>
       </li>
       <li class="hotel-card-item">
         <a href="">
-          <img alt="Красный холм на фоне неба" src="#">
+          <img alt="Красный холм на фоне неба" src="images/hotel-3.jpg">
         </a>
         <h3 class="hotel-card-title">Desert Quail Inn</h3>
         <p class="hotel-card-type">Гостиница</p>
         <p class="hotel-card-price">От 2500 ₽</p>
         <a class="hotel-card-details" href="#">Подробнее</a>
         <button class="hotel-card-add" type="button">В избранное</button>
-        <img alt="три звезды" class="hotel-card-stars" src="#">
+        <img alt="три звезды" class="hotel-card-stars" src="images/stars-3.svg">
         <p class="hotel-card-rating">Рейтинг: 6.9</p>
       </li>
       <li class="hotel-card-item">
         <a href="">
-          <img alt="Красная гора на фоне заката" src="#">
+          <img alt="Красная гора на фоне заката" src="images/hotel-4.jpg">
         </a>
         <h3 class="hotel-card-title">GreenTree Inn</h3>
         <p class="hotel-card-type">Гостиница</p>
         <p class="hotel-card-price">От 1500 ₽</p>
         <a class="hotel-card-details" href="#">Подробнее</a>
         <button class="hotel-card-add" type="button">В избранное</button>
-        <img alt="две звезды" class="hotel-card-stars" src="#">
+        <img alt="две звезды" class="hotel-card-stars" src="images/stars-2.svg">
         <p class="hotel-card-rating">Рейтинг: 5.0</p>
       </li>
     </ul>
@@ -194,7 +203,7 @@
       </li>
     </ul>
   </section>
-  <section class="subscription">
+  <section class="subscription subscription-inner">
     <h2>Подпишитесь на рассылку</h2>
     <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" method="POST">
@@ -211,22 +220,22 @@
   <ul class="social-list">
     <li>
       <a href="#">
-        <img src="#" alt="Седона во ВКонтакте">
+        <img alt="Седона во ВКонтакте" src="images/social-vkontakte.svg">
       </a>
     </li>
     <li>
       <a href="#">
-        <img src="#" alt="Седона в Телеграме">
+        <img alt="Седона в Телеграме" src="images/social-telegram.svg">
       </a>
     </li>
     <li>
       <a href="#">
-        <img src="#" alt="Седона в Ютубе">
+        <img alt="Седона в Ютубе" src="images/social-youtube.svg">
       </a>
     </li>
   </ul>
   <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-  <img class="credits" src="#" alt="Логотип HTML Academy">
+  <img alt="Логотип HTML Academy" class="credits" src="images/credits.svg">
 </footer>
 </body>
 </html>
