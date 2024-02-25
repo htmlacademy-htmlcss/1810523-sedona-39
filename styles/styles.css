@@ -189,6 +189,18 @@ body {
   text-transform: uppercase;
 }
 
+.services-item-housing {
+  background: url("../images/services-housing.svg") no-repeat 50% 25%;
+}
+
+.services-item-food {
+  background: url("../images/services-food.svg") no-repeat 50% 25%;
+}
+
+.services-item-souvenirs {
+  background: url("../images/services-souvenirs.svg") no-repeat 50% 25%;
+}
+
 /**
   Offer.
  */
