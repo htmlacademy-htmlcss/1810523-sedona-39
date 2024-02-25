@@ -8,7 +8,9 @@
 <body>
 
 <header class="header">
-  <img alt="Логотип города Седона" src="images/logo.svg">
+  <a class="logo">
+    <img alt="Логотип города Седона" height="70" src="images/logo.svg" width="140">
+  </a>
   <nav class="navigation">
     <ul class="navigation-list">
       <li class="navigation-item navigation-item-active">Главная</li>
@@ -30,9 +32,13 @@
 </header>
 
 <main>
-  <!-- ВОПРОС: почему не отображается фон? !-->
   <section class="main-hero">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+    <figure class="main-hero-header">
+      <img alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" height="352"
+           src="images/main-hero-header.svg"
+           width="458">
+    </figure>
   </section>
   <section class="advantages">
     <h2>
@@ -131,7 +137,9 @@
     </li>
   </ul>
   <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-  <img alt="Логотип HTML Academy" class="credits" src="images/credits.svg">
+  <a href="https://htmlacademy.ru/">
+    <img alt="Логотип HTML Academy" class="credits" src="images/credits.svg">
+  </a>
 </footer>
 
 </body>

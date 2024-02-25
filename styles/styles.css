@@ -84,8 +84,20 @@ body {
  */
 
 .main-hero {
-  background: url("../images/main-hero.jpg") no-repeat;
-  background-size: 100% auto;
+  width: 1200px;
+  height: 485px;
+
+  text-align: center;
+
+  background-color: #8997a3;
+  background-image: url("../images/divider.svg"), url("../images/main-hero.jpg");
+  background-size: 1200px 57px, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+}
+
+.main-hero-header {
+  vertical-align: middle;
 }
 
 /**
@@ -98,6 +110,7 @@ body {
 
 .advantages h2 {
   color: #000;
+  text-transform: uppercase;
 
   margin-top: 69px;
 
@@ -128,6 +141,8 @@ body {
 
   font-size: 18px;
   line-height: 21px;
+
+  box-sizing: border-box;
 }
 
 .advantages-item h3 {
@@ -180,6 +195,8 @@ body {
 
   font-size: 18px;
   line-height: 21px;
+
+  box-sizing: border-box;
 }
 
 .services-item h3 {
@@ -249,7 +266,7 @@ body {
 
 .subscription {
   margin-top: 96px;
-  padding: 96px 258px 104px 258px;
+  padding: 96px 32px 104px 32px;
 
   text-align: center;
 

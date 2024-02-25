@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
   <a class="logo" href="index.html">
-    <img alt="Логотип города Седона" src="images/logo.svg">
+    <img alt="Логотип города Седона" height="70" src="images/logo.svg" width="140">
   </a>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -41,7 +42,7 @@
   <ol class="breadcrumbs">
     <li>
       <a class="breadcrumbs-home" href="index.html">
-        <img src="images/home.svg" style="background-color: tomato">
+        <img alt="" src="images/home.svg" style="background-color: tomato">
         <!-- декоративное изображение, потом сделать стилями !-->
         <span>Главная страница</span>
       </a>
@@ -89,8 +90,8 @@
       <label>до<input class="price-max" type="text"></label>
       <input class="hotel-filter-price-slider" type="range" min="0" max="9000" value="7500">
     </fieldset>
-    <button class="hotel-filter-apply-btn" type="button">Применить</button>
-    <button class="hotel-filter-reset-btn" type="button">Сбросить</button>
+    <button class="hotel-filter-apply-btn" type="submit">Применить</button>
+    <button class="hotel-filter-reset-btn" type="reset">Сбросить</button>
   </section>
   <section class="hotel-cards">
     <h2>Найдено гостиниц: 38</h2>
@@ -235,7 +236,9 @@
     </li>
   </ul>
   <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-  <img alt="Логотип HTML Academy" class="credits" src="images/credits.svg">
+  <a href="https://htmlacademy.ru/">
+    <img alt="Логотип HTML Academy" class="credits" src="images/credits.svg">
+  </a>
 </footer>
 </body>
 </html>
