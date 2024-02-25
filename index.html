@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,34 +17,29 @@
     </ul>
   </nav>
   <div class="controls">
-    <a href="#">
+    <a class="control control-search" href="#">
       <span class="visually-hidden">Поиск</span>
-      <img alt="Искать" class="control-search" src="images/search.svg">
-      <!-- декоративное изображение, потом сделать стилями !-->
     </a>
-    <a href="#">
+    <a class="control control-favorites" href="#">
       <span class="visually-hidden">Избранное</span>
-      <img alt="В избранное" class="control-favorites" src="images/favorites.svg">
-      <!-- декоративное изображение, потом сделать стилями !-->
     </a>
-    <a href="#">
-      <span class="control-want-here">Хочу сюда!</span>
+    <a class="control control-want-here" href="#">
+      Хочу сюда!
     </a>
   </div>
 </header>
 
 <main>
+  <!-- ВОПРОС: почему не отображается фон? !-->
   <section class="main-hero">
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-    <img alt="#" src="images/main-hero.png">
-    <!-- Там понимаю, что это декоративное изображение и оно уходит в стили. !-->
   </section>
   <section class="advantages">
     <h2>
       Седона — небольшой городок в Аризоне,<br>
       заслуживающий большего!
     </h2>
-    <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     <ul class="advantages-list">
       <li class="advantages-item advantages-item-authentic-town">
         <h3>Настоящий<br>городок</h3>
@@ -73,27 +69,27 @@
     <h2>
       Приезжайте в Седону отдохнуть<br>в комфорте и уюте!
     </h2>
-    <p>Опытный персонал и качественное обслуживание!</p>
+    <p class="services-description">Опытный персонал и качественное обслуживание!</p>
     <ul class="services-list">
       <li class="services-item services-item-housing">
         <h3>Жильё</h3>
         <p>Рекомендуем пожить в настоящем мотеле,
           всё как в кино!</p>
-        <img alt="" class="control-favorites" src="images/services-housing.svg">
+        <img alt="" src="images/services-housing.svg">
         <!-- декоративное изображение, потом сделать стилями !-->
       </li>
       <li class="services-item services-item-food">
         <h3>Еда</h3>
         <p>Всегда заказывайте
           топовый фирменный бургер, вы не разочаруетесь!</p>
-        <img alt="" class="control-favorites" src="images/services-food.svg">
+        <img alt="" src="images/services-food.svg">
         <!-- декоративное изображение, потом сделать стилями !-->
       </li>
       <li class="services-item services-item-souvenirs">
         <h3>Сувениры</h3>
         <p>Не только китайского,
           но и настоящего местного производства!</p>
-        <img alt="" class="control-favorites" src="images/services-souvenirs.svg">
+        <img alt="" src="images/services-souvenirs.svg">
         <!-- декоративное изображение, потом сделать стилями !-->
       </li>
     </ul>
@@ -102,24 +98,20 @@
     <h2>
       Заинтересовались?
     </h2>
-    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+    <p class="offer-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
       в Седоне</p>
-    <a href="#">
-      <!-- Договорились с наставником оставить пока так, чтобы исправить на этапе стилизации. !-->
-      <div class="main-action-btn">
-        <span>Поиск гостиницы в Седоне</span>
-      </div>
+    <a class="offer-search-btn" href="#">
+      Поиск гостиницы в Седоне
     </a>
   </section>
+  <!-- ВОПРОС: аналогичный вопрос, почему фон короткий такой? !-->
   <section class="subscription">
-    <img alt="" src="images/subscribe.jpg">
-    <!-- декоративное изображение, потом сделать стилями !-->
     <h2>Подпишитесь на рассылку</h2>
-    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form action="https://echo.htmlacademy.ru/" method="POST">
+    <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <form action="https://echo.htmlacademy.ru/" class="subscription-form" method="POST">
       <label>
+        <span class="visually-hidden">Ваш e-mail</span>
         <input class="email" type="email" placeholder="Ваш e-mail" id="email" name="email">
-        Ваш e-mail
       </label>
       <button class="subscribe-btn" type="submit" id="subscribe-btn">Подписаться</button>
     </form>
