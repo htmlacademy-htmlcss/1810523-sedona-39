@@ -48,12 +48,8 @@ html {
 }
 
 body {
-  width: 1280px;
-
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
+  margin: 0;
 
   color: #333;
   font-family: "PT Sans", sans-serif;
@@ -64,6 +60,14 @@ body {
   DEV.
    */
   background-color: lightgray;
+}
+
+.container {
+  width: 1280px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /**
