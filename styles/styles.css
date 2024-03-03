@@ -1,3 +1,7 @@
+/**
+  Шрифты.
+ */
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -12,14 +16,6 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-}
-
-body {
-  color: #333;
-
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 /**
@@ -40,8 +36,65 @@ body {
 }
 
 /**
+  Основное.
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 1280px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+
+  /**
+  DEV.
+   */
+  background-color: lightgray;
+}
+
+/**
   Header.
  */
+
+.header-container {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 70px;
+
+  /**
+DEV.
+*/
+  outline: 1px solid tomato;
+  background-color: white;
+}
+
+.navigation {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.navigation-list {
+  margin: 0 0 0 30px;
+  padding: 0;
+
+  list-style: none;
+  display: flex;
+}
 
 .navigation-item {
   color: #000;
@@ -50,6 +103,10 @@ body {
 
   font-size: 20px;
   line-height: 24px;
+}
+
+.controls {
+  margin-left: auto;
 }
 
 .control {
@@ -80,16 +137,31 @@ body {
 }
 
 /**
+  Main.
+ */
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+
+  /**
+DEV.
+*/
+  outline: 1px solid tomato;
+  background-color: white;
+}
+
+/**
   Main Hero.
  */
 
 .main-hero {
-  width: 1200px;
   height: 485px;
 
   display: flex;
-
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   background-color: #8997a3;
   background-image: url("../images/main-hero-divider.svg"), url("../images/main-hero-background.jpg");
@@ -107,7 +179,9 @@ body {
  */
 
 .advantages {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages h2 {
@@ -126,7 +200,12 @@ body {
 }
 
 .advantages-list {
-  margin-top: 90px;
+  width: 1200px;
+  margin: 90px 0 0 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -135,8 +214,8 @@ body {
   width: 400px;
   height: 385px;
 
-  /** ДЛЯ ОТЛАДКИ **/
-  border: 1px solid tomato;
+  /** DEV **/
+  outline: 1px solid tomato;
 
   margin: 0;
   padding: 103px 85px;
@@ -144,7 +223,9 @@ body {
   font-size: 18px;
   line-height: 21px;
 
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages-item h3 {
@@ -154,6 +235,33 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-item h3, .advantages-item p {
+  text-align: center;
+}
+
+.advantages-item-authentic-town, .advantages-item-devils-place {
+  width: 1200px;
+
+  flex-direction: row;
+}
+
+.advantages-item:nth-child(1), .advantages-item:nth-child(5) {
+  background-color: #82B3D3;
+  color: white;
+}
+
+.advantages-item:nth-child(1) h3, .advantages-item:nth-child(5) h3 {
+  color: white;
+}
+
+.advantages-item:nth-child(2), .advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.20);
 }
 
 /**
@@ -180,9 +288,12 @@ body {
 }
 
 .services-list {
-  margin-top: 64px;
+  margin: 64px 0 0 0;
+  padding: 0;
 
   list-style: none;
+
+  display: flex;
 }
 
 .services-item {
@@ -209,7 +320,7 @@ body {
 }
 
 .services-item-housing {
-  background: url("../images/services-housing.svg") no-repeat 50% 25%;
+  background: rgba(131, 179, 211, 0.12) url("../images/services-housing.svg") no-repeat 50% 25%;
 }
 
 .services-item-food {
@@ -217,7 +328,7 @@ body {
 }
 
 .services-item-souvenirs {
-  background: url("../images/services-souvenirs.svg") no-repeat 50% 25%;
+  background: rgba(131, 179, 211, 0.12) url("../images/services-souvenirs.svg") no-repeat 50% 25%;
 }
 
 /**
@@ -225,14 +336,17 @@ body {
  */
 
 .offer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .offer h2 {
-  color: #000;
-
   margin-top: 96px;
 
+  text-align: center;
+
+  color: #000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -243,6 +357,8 @@ body {
   width: 592px;
 
   margin-top: 20px;
+
+  text-align: center;
 }
 
 .offer-search-btn {
@@ -267,17 +383,21 @@ body {
  */
 
 .subscription {
-  margin-top: 96px;
-  padding: 96px 32px 104px 32px;
+  height: 414px;
 
-  text-align: center;
+  margin-top: 96px;
+  padding: 0 32px 104px 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   background: url("../images/subscribe.jpg") no-repeat;
   background-size: 100% auto;
 }
 
 .subscription h2 {
-  margin-top: 96px;
+  margin: 96px 0 0 0;
 
   color: white;
 
@@ -288,7 +408,7 @@ body {
 }
 
 .subscription-description {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
 
   color: white;
 }
@@ -330,6 +450,23 @@ body {
   Footer.
  */
 
+.footer {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /**
+DEV.
+*/
+  outline: 1px solid tomato;
+  background-color: white;
+}
+
 .footer .telephone {
   color: #000;
 
@@ -340,6 +477,13 @@ body {
 
 .social-list {
   margin: 0;
+  padding: 0;
+
+  display: flex;
 
   list-style: none;
+}
+
+.social-list a {
+  padding: 10px;
 }
