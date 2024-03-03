@@ -87,17 +87,19 @@ body {
   width: 1200px;
   height: 485px;
 
-  text-align: center;
+  display: flex;
+
+  justify-content: center;
 
   background-color: #8997a3;
-  background-image: url("../images/divider.svg"), url("../images/main-hero.jpg");
+  background-image: url("../images/main-hero-divider.svg"), url("../images/main-hero-background.jpg");
   background-size: 1200px 57px, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
 }
 
-.main-hero-header {
-  vertical-align: middle;
+.main-hero-welcome {
+  margin-top: 51px;
 }
 
 /**
