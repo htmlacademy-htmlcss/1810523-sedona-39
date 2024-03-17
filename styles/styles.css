@@ -340,7 +340,7 @@ DEV.
   height: 385px;
 
   /** ДЛЯ ОТЛАДКИ **/
-  border: 1px solid tomato;
+  outline: 1px solid tomato;
 
   margin: 0;
   padding: 80px 85px;
@@ -468,6 +468,9 @@ DEV.
   width: 684px;
   height: 52px;
 
+  /**
+  DEV.
+   */
   outline: 1px solid tomato;
   display: flex;
   justify-content: space-between;
@@ -485,6 +488,7 @@ DEV.
 
   border-radius: 4px 0 0 4px;
 
+  font-family: "PT Sans", 'serif';
   font-size: 18px;
   line-height: 24px;
 }
@@ -522,7 +526,7 @@ DEV.
   /**
 DEV.
 */
-  outline: 1px solid tomato;
+  outline: 1px solid blue;
   background-color: white;
 }
 
@@ -545,4 +549,83 @@ DEV.
 
 .social-list a {
   padding: 10px;
+}
+
+/**
+  Catalog (subpage).
+**/
+
+.catalog {
+  background-color: white;
+}
+
+/**
+  Hotel filters.
+**/
+.hotel-filters {
+  background-color: #8997a3;
+  background-image: url("../images/filter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  padding: 35px 70px 70px 70px;
+}
+
+/**
+  Hotel cards.
+ */
+.hotel-cards {
+  padding: 50px 70px 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  /** DEV. **/
+  outline: 1px solid tomato;
+}
+
+.hotel-cards-header {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.hotel-cards-header h2 {
+  margin: 0;
+
+  font-family: "PT Sans", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.hotel-card-list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  Subscription.
+ */
+
+.subscription-inner {
+  margin-top: 0px;
+
+  background: white;
+
+  /** DEV. **/
+  outline: 1px solid cyan;
+}
+
+.subscription-inner h2, .subscription-description {
+  color: black;
 }
