@@ -572,6 +572,53 @@ DEV.
   padding: 35px 70px 70px 70px;
 }
 
+.hotel-filters h1 {
+  margin: 0;
+
+  color: white;
+  font-family: "PT Sans", serif;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  margin: 8px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  display: inline;
+}
+
+.hotel-filter-controls {
+  margin: 40px 0 0 0;
+}
+
+.hotel-filter-controls {
+  display: flex;
+}
+
+.hotel-filter-infrastructure {
+  display: flex;
+  margin: 0 70px 0 0;
+}
+
+.hotel-filter-housing-type {
+  display: flex;
+  margin: 0;
+}
+
+.hotel-filter-price {
+  display: flex;
+  margin: 0 70px 0 0;
+}
+
+.hotel-filter-buttons {
+  display: flex;
+  margin: 0;
+}
+
 /**
   Hotel cards.
  */
@@ -587,8 +634,9 @@ DEV.
 }
 
 .hotel-cards-header {
-  margin-top: 0;
-  margin-bottom: 40px;
+  margin: 0;
+
+  display: flex;
 }
 
 .hotel-cards-header h2 {
@@ -606,6 +654,12 @@ DEV.
 
   display: flex;
   flex-wrap: wrap;
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: #E6E6E6;
 }
 
 .pagination {

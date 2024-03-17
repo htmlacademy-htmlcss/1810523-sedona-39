@@ -34,14 +34,14 @@
     <section class="hotel-filters">
       <h1>Гостиницы Седоны</h1>
       <ol class="breadcrumbs">
-        <li>
+        <li class="breadcrumbs-item">
           <a class="breadcrumbs-home" href="index.html">
             <img alt="" src="images/home.svg" style="background-color: tomato">
             <!-- декоративное изображение, потом сделать стилями !-->
             <span>Главная страница</span>
           </a>
         </li>
-        <li>
+        <li class="breadcrumbs-item">
           <span>Гостиницы</span>
         </li>
       </ol>
@@ -72,11 +72,26 @@
         </fieldset>
         <fieldset class="hotel-filter-housing-type">
           <legend>Тип жилья:</legend>
-          <select name="housing-type-radio">
-            <option value="hotel">Гостиница</option>
-            <option value="motel">Мотель</option>
-            <option value="apartment">Апартаменты</option>
-          </select>
+          <ul>
+            <li>
+              <label>
+                <input name="housing-type-radio" type="radio" value="hotel">
+                Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="housing-type-radio" type="radio" value="motel">
+                Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="housing-type-radio" type="radio" value="apartment">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="hotel-filter-price">
           <legend>Стоимость, ₽:</legend>
@@ -84,8 +99,10 @@
           <label>до<input class="price-max" type="text"></label>
           <input class="hotel-filter-price-slider" max="9000" min="0" type="range" value="7500">
         </fieldset>
-        <button class="hotel-filter-apply-btn" type="submit">Применить</button>
-        <button class="hotel-filter-reset-btn" type="reset">Сбросить</button>
+        <div class="hotel-filter-buttons">
+          <button class="hotel-filter-apply-btn" type="submit">Применить</button>
+          <button class="hotel-filter-reset-btn" type="reset">Сбросить</button>
+        </div>
       </section>
     </section>
     <section class="hotel-cards">
@@ -170,6 +187,7 @@
           <p class="hotel-card-rating">Рейтинг: 5.0</p>
         </li>
       </ul>
+      <div class="separator"></div>
       <ul class="pagination">
         <li class="pagination-item pagination-item-active">
           1
