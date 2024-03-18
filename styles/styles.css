@@ -654,15 +654,14 @@ DEV.
   flex-wrap: wrap;
 }
 
-.separator {
-  width: 100%;
-  height: 1px;
-  background: #E6E6E6;
-}
-
 .pagination {
   margin: 0;
   padding: 0;
+}
+
+.separator-above {
+  padding-top: 40px;
+  border-top: 2px solid #E6E6E6;
 }
 
 /**
