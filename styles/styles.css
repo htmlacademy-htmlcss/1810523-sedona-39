@@ -465,7 +465,7 @@ body {
 
   border-radius: 4px 0 0 4px;
 
-  font-family: "PT Sans", 'serif';
+  font-family: "PT Sans", serif;
   font-size: 18px;
   line-height: 24px;
 }
@@ -630,13 +630,13 @@ body {
   line-height: 23px;
 }
 
-.hotel-filter-infrastructure ul > li,
-.hotel-filter-housing-type ul > li {
+.hotel-filter-infrastructure li,
+.hotel-filter-housing-type li {
   margin-bottom: 16px;
 }
 
-.hotel-filter-infrastructure ul > li:last-child,
-.hotel-filter-housing-type ul > li:last-child {
+.hotel-filter-infrastructure li:last-child,
+.hotel-filter-housing-type li:last-child {
   margin-bottom: 0;
 }
 
