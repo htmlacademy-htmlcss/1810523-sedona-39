@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Денис К.](https://up.htmlacademy.ru/htmlcss/39/user/1810523).
-* Наставник: `Неизвестно`.
+* Наставник: [`Ирина Малиновская`](https://htmlacademy.ru/profile/irina-malinovskaya).
+* Мой проект: [SEDONA](https://denisk-htmlacademy.github.io/1810523-sedona-39/).
 
 ---
 
